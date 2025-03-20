@@ -1,8 +1,8 @@
 # import streamlit as st
 # import openai
 # import time
-# from dotenv import load_dotenv
-# import os
+from dotenv import load_dotenv
+import os
 
 # OpenAI API Key (Replace with your actual key)
 load_dotenv()  # Load environment variables from .env file
