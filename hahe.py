@@ -10,22 +10,6 @@ api_key = os.getenv("OPENAI_API_KEY")
 
 client = openai.OpenAI(api_key=api_key)
 
-# Custom Styling for a Sleek, Modern Look
-st.markdown(
-    """
-    <style>
-    body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; }
-    .stTextInput > div > div > input { font-size: 16px; padding: 12px; border-radius: 8px; }
-    .stTextArea > div > div > textarea { font-size: 16px; padding: 12px; border-radius: 8px; }
-    .chat-message { padding: 12px; margin: 10px 0; border-radius: 12px; font-size: 16px; }
-    .user-message { background-color: #007bff; color: white; align-self: flex-end; }
-    .ai-message { background-color: #f1f3f4; color: black; }
-    .stButton button { width: 100%; padding: 10px; font-size: 16px; border-radius: 8px; }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
-
 # Sidebar: Select Chatbot Type
 chatbot_type = st.sidebar.radio(
     "Choose a chatbot version:",
