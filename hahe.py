@@ -8,7 +8,7 @@ import os
 # load_dotenv()  # Load environment variables from .env file
 api_key = st.secrets["openai"]["api_key"]
 
-client = openai.OpenAI(api_key=api_key)
+openai.api_key = api_key
 
 # Sidebar: Select Chatbot Type
 chatbot_type = st.sidebar.radio(
